@@ -1,6 +1,3 @@
-#ifndef C_EX3_ARRAYS_H
-#define C_EX3_ARRAYS_H
+void shift_element(int* arr, int len);
 
-void hello(void);
-
-#endif //C_EX3_ARRAYS_H
+void insertion_sort(int* arr , int len);
