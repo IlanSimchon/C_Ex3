@@ -10,19 +10,30 @@
 
 void print_similar_words(char *word);
 
-int getLine(char s[LINE]){
-    int j;
-    for (j = 0; j < LINE ; j++) {
-        *(s+j) = getchar();
-       // printf("%c\n" , *(s+j));
-        if(s[j] == '\n' || s[j] == '\r' ||  s[j] == EOF){
-            s[j] = '\0';
-            break;
-        }
+int getLine(char s[LINE]) {
+    int j = 0;
+    scanf("%c", &s[j]);
+    while (j < LINE && s[j] != '\n' && s[j] != '\r') {
+        j++;
+        if (scanf("%c", &s[j]) == EOF) return 0;
     }
-    if(s[j] == EOF) return 0;
-    return j-1;
+
+    s[j] = '\0';
+    return j + 1;
 }
+//int getLine(char s[LINE]){
+//    int j;
+//    for (j = 0; j < LINE ; j++) {
+//        s[j] = getchar();
+//       // printf("%c\n" , *(s+j));
+//        if(s[j] == '\n' || s[j] == '\r' ||  s[j] == EOF){
+//            s[j] = '\0';
+//            break;
+//        }
+//    }
+//    if(s[j] == EOF) return 0;
+//    return j;
+
 
 int getword(char w[]) {
     int j = 0;

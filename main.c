@@ -13,7 +13,7 @@ int main() {
     for (int k = 0; k < len-1  ; k++) {
         printf("%d," , *(arr+k));
     }
-    printf("%d" , *(arr+len-1));
+    printf("%d\n" , *(arr+len-1));
 
     return 0;
 }
