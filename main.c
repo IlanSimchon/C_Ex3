@@ -3,6 +3,7 @@
 #include "Strings.h"
 
 # define len 50
+
 int main() {
     int arr[len];
     for (int i = 0; i < len ; ++i) {
