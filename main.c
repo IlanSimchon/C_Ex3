@@ -2,9 +2,6 @@
 #include "Arrays.h"
 #include "Strings.h"
 
-#define LINE 256
-#define WORD 30
-
 # define len 50
 
 int main() {
