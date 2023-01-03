@@ -1,6 +1,7 @@
 flags = -g -Wall
 
 all: isort txtfind
+
 isort: main.o Arrays.o
 	gcc $(flags) main.o Arrays.o -o isort
 txtfind: Strings.o
@@ -14,5 +15,6 @@ main.o: main.c
 	gcc $(flags) -c main.c -o main.o
 
 .PHONY: all clean
+
 clean:
 		rm -f *.o isort txtfind
